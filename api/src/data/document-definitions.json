@@ -1,0 +1,90 @@
+﻿{
+  "version": "2.0.0",
+  "documents": {
+    "aadhaar": {
+      "category": "identity_core",
+      "supported_fields": ["full_name", "date_of_birth", "year_of_birth", "gender", "address", "aadhaar_number", "phone_number"],
+      "comparison_fields": ["full_name", "date_of_birth", "year_of_birth", "gender", "address"],
+      "pii_fields": {
+        "aadhaar_number": { "sensitivity": "critical", "allowed_purposes": ["verification"] },
+        "full_name": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] },
+        "date_of_birth": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] },
+        "address": { "sensitivity": "restricted", "allowed_purposes": ["verification", "audit"] },
+        "phone_number": { "sensitivity": "critical", "allowed_purposes": ["verification"] },
+        "gender": { "sensitivity": "internal", "allowed_purposes": ["display", "verification", "audit"] }
+      }
+    },
+    "pan": {
+      "category": "identity_core",
+      "supported_fields": ["full_name", "father_name", "date_of_birth", "pan_number"],
+      "comparison_fields": ["full_name", "father_name", "date_of_birth"],
+      "pii_fields": {
+        "pan_number": { "sensitivity": "critical", "allowed_purposes": ["verification"] },
+        "full_name": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] },
+        "father_name": { "sensitivity": "restricted", "allowed_purposes": ["verification", "audit"] },
+        "date_of_birth": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] }
+      }
+    },
+    "birth_certificate": {
+      "category": "identity_supporting",
+      "supported_fields": ["full_name", "date_of_birth", "place_of_birth", "father_name", "mother_name", "registration_number"],
+      "comparison_fields": ["full_name", "date_of_birth", "place_of_birth", "father_name", "mother_name"],
+      "pii_fields": {
+        "registration_number": { "sensitivity": "restricted", "allowed_purposes": ["verification", "audit"] },
+        "full_name": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] },
+        "date_of_birth": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] },
+        "father_name": { "sensitivity": "internal", "allowed_purposes": ["verification", "audit"] },
+        "mother_name": { "sensitivity": "internal", "allowed_purposes": ["verification", "audit"] }
+      }
+    },
+    "school_leaving_certificate": {
+      "category": "identity_supporting",
+      "supported_fields": ["full_name", "date_of_birth", "place_of_birth", "father_name", "mother_name", "school_name"],
+      "comparison_fields": ["full_name", "date_of_birth", "place_of_birth", "father_name", "mother_name"],
+      "pii_fields": {
+        "full_name": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] },
+        "date_of_birth": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] }
+      }
+    },
+    "marksheet": {
+      "category": "identity_supporting",
+      "supported_fields": ["full_name", "mother_name", "seat_number", "school_name", "examination_year"],
+      "comparison_fields": ["full_name", "mother_name"],
+      "pii_fields": {
+        "seat_number": { "sensitivity": "internal", "allowed_purposes": ["verification", "audit"] },
+        "full_name": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] }
+      }
+    },
+    "domicile_certificate": {
+      "category": "residency",
+      "supported_fields": ["full_name", "father_name", "address", "date_of_issue", "certificate_number", "district"],
+      "comparison_fields": ["full_name", "father_name", "address"],
+      "pii_fields": {
+        "certificate_number": { "sensitivity": "restricted", "allowed_purposes": ["verification", "audit"] },
+        "full_name": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] },
+        "address": { "sensitivity": "restricted", "allowed_purposes": ["verification", "audit"] }
+      }
+    },
+    "caste_certificate": {
+      "category": "social_category",
+      "supported_fields": ["full_name", "father_name", "caste", "sub_caste", "certificate_number", "date_of_issue"],
+      "comparison_fields": ["full_name", "father_name"],
+      "pii_fields": {
+        "caste": { "sensitivity": "critical", "allowed_purposes": ["verification"] },
+        "sub_caste": { "sensitivity": "critical", "allowed_purposes": ["verification"] },
+        "certificate_number": { "sensitivity": "restricted", "allowed_purposes": ["verification", "audit"] },
+        "full_name": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] }
+      }
+    },
+    "income_certificate": {
+      "category": "financial",
+      "supported_fields": ["full_name", "father_name", "annual_income", "certificate_number", "date_of_issue"],
+      "comparison_fields": ["full_name", "father_name"],
+      "pii_fields": {
+        "annual_income": { "sensitivity": "critical", "allowed_purposes": ["verification"] },
+        "certificate_number": { "sensitivity": "restricted", "allowed_purposes": ["verification", "audit"] },
+        "full_name": { "sensitivity": "restricted", "allowed_purposes": ["display", "verification", "audit"] }
+      }
+    }
+  }
+}

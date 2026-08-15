@@ -1,0 +1,286 @@
+{
+    "database_version": "1.0.0",
+    "authority": "UIDAI",
+    "document_type": "aadhaar",
+    "jurisdiction": "India",
+    "last_verified_by_project": "2026-08-05",
+    "records": [
+        {
+            "id": "UIDAI-NAME-001",
+            "title": "Name Update / Correction",
+            "field_key": "full_name",
+            "scenario": "name_update_correction",
+            "when_applicable": "Applicable when correcting spelling errors, changing the sequence of an existing name, editing or appending initials, updating the name after marriage, divorce or adoption, or correcting enrolment-operator typo or transliteration errors.",
+            "procedure": [
+                "For a standard or minor update within the permitted limit, fill the applicable Aadhaar Enrolment/Update Form and write the name in block letters without courtesy titles, honorifics or aliases.",
+                "Visit an Aadhaar Enrolment or Update Centre with the original Proof of Identity document.",
+                "The operator scans and verifies the original document, captures biometrics where applicable, and uploads the update request.",
+                "Collect the acknowledgement receipt containing the enrolment or update identifier.",
+                "For a complete or first-name change, follow the standard update process and provide the official Gazette Notification as the Proof of Identity document.",
+                "For exception handling after the normal update limit is exceeded, submit the request through the applicable UIDAI exception route and provide the required supporting documents.",
+                "For operator typo or transliteration errors, contact UIDAI through the official support channel, including 1947 where applicable.",
+                "The concerned UIDAI Regional Office may manually verify the case and recommend reprocessing where the official exception process allows it."
+            ],
+            "required_document_categories": [
+                "Proof of Identity containing name and photograph",
+                "Birth Certificate for eligible minor-name cases",
+                "Gazette Notification for complete or first-name change",
+                "Marriage Certificate, Divorce Decree or Adoption Certificate for applicable exception cases",
+                "UIDAI standard-format certificate where officially accepted"
+            ],
+            "example_documents": [
+                "Valid Indian Passport",
+                "Voter ID",
+                "Ration Card",
+                "Driving Licence",
+                "Government or service photo identity card"
+            ],
+            "online_allowed": null,
+            "offline_required": true,
+            "update_limit": "Name can be updated only twice under the standard lifetime limit. Further requests may require UIDAI exception handling.",
+            "human_review_required": true,
+            "warnings": [
+                "Nirdosh Vault does not determine whether a requested name change is legally valid.",
+                "Nirdosh Vault cannot know the user's historical Aadhaar update count from the uploaded Aadhaar document.",
+                "Providing false declarations may lead to action under the applicable Aadhaar framework."
+            ],
+            "issuing_authority": "Unique Identification Authority of India (UIDAI)",
+            "official_portal": "https://uidai.gov.in",
+            "sources": [
+                {
+                    "title": "Aadhaar (Enrolment and Update) First Amendment Regulations, 2026",
+                    "file_name": "images_Aadhaar_Enrolment_and_Update_First_Amendment_Regulations_2026_pdf.pdf",
+                    "url": "",
+                    "effective_date": "2026-05-10"
+                },
+                {
+                    "title": "SOP dated 28-10-2021: Name and Gender Update Request under Exception Handling Process",
+                    "file_name": "images_SOP_dated_28_10_2021-Name_and_Gender_update_request_under_exception_handling_process_Circular_dated_03-11-2021.pdf",
+                    "url": "https://uidai.gov.in/images/SOP_dated_28_10_2021Name_and_Gender_update_request_under_exception_handling_process_Circular_dated_03-11-2021.pdf",
+                    "effective_date": "2021-11-03"
+                },
+                {
+                    "title": "Certificate for Aadhaar Enrolment or Update Circular",
+                    "file_name": "images_Circular__dated_27_11_2019.pdf",
+                    "url": "",
+                    "effective_date": "2019-11-27"
+                }
+            ],
+            "supporting_excerpt": [
+                "name twice",
+                "In case of complete name change or change in the first name of the resident, the Gazette Notification of name change to be uploaded as PoI document.",
+                "Under exception handling, resident will have to submit the marriage/divorce/adoption certificate and request shall be considered by RO.",
+                "The validity of this certificate is only three months from the date of issue."
+            ],
+            "verification_status": "pending_manual_review",
+            "active": true,
+            "tags": [
+                "aadhaar",
+                "uidai",
+                "name_update",
+                "full_name",
+                "demographic_update",
+                "exception_handling"
+            ]
+        },
+        {
+            "id": "UIDAI-DOB-001",
+            "title": "Date of Birth Correction / Update",
+            "field_key": "date_of_birth",
+            "scenario": "date_of_birth_update_correction",
+            "when_applicable": "Applicable when correcting an Aadhaar date of birth, changing a declared or approximate year of birth to a verified date of birth, or correcting a previously submitted proof.",
+            "procedure": [
+                "Fill the applicable Aadhaar Enrolment/Update Form.",
+                "For an update, the date of birth must be supported as a verified date of birth.",
+                "Present the original Proof of Date of Birth document at an Aadhaar Enrolment or Update Centre for scanning and verification.",
+                "Complete the required identity or biometric verification.",
+                "If a birth certificate was used previously, provide the corrected birth certificate bearing the same Birth Registration Number where the official rule requires it.",
+                "If another Proof of Date of Birth was submitted previously, provide the corrected version of the same document or another document permitted by the official UIDAI rule.",
+                "For cases beyond the standard update limit, follow UIDAI's applicable exception-handling process."
+            ],
+            "required_document_categories": [
+                "UIDAI-accepted Proof of Date of Birth",
+                "Corrected Birth Certificate with the same Birth Registration Number where applicable",
+                "Corrected version of the previously submitted Proof of Date of Birth where applicable",
+                "Name-change evidence for applicable post-marriage cases"
+            ],
+            "example_documents": [
+                "Birth Certificate",
+                "Valid Indian Passport",
+                "Recognised board marksheet or certificate",
+                "Pension Payment Order",
+                "Transgender Identity Card"
+            ],
+            "online_allowed": null,
+            "offline_required": true,
+            "update_limit": "Date of birth can be updated once under the standard lifetime limit. Further changes are subject to UIDAI's applicable exception process.",
+            "human_review_required": true,
+            "warnings": [
+                "Nirdosh Vault identifies a mismatch but does not determine which document contains the legally correct date of birth.",
+                "A year-only or declared DOB must not automatically be treated as a full-date conflict when the year agrees.",
+                "The exact accepted document depends on the resident category and the current UIDAI accepted-document list."
+            ],
+            "issuing_authority": "Unique Identification Authority of India (UIDAI)",
+            "official_portal": "https://uidai.gov.in",
+            "sources": [
+                {
+                    "title": "Aadhaar (Enrolment and Update) First Amendment Regulations, 2026",
+                    "file_name": "images_Aadhaar_Enrolment_and_Update_First_Amendment_Regulations_2026_pdf.pdf",
+                    "url": "",
+                    "effective_date": "2026-05-10"
+                },
+                {
+                    "title": "Certificate for Aadhaar Enrolment or Update Circular",
+                    "file_name": "images_Circular__dated_27_11_2019.pdf",
+                    "url": "",
+                    "effective_date": "2019-11-27"
+                }
+            ],
+            "supporting_excerpt": [
+                "date of birth once",
+                "If the Aadhaar number holder had earlier submitted birth certificate as proof of date of birth, the Aadhaar number holder shall submit corrected birth certificate bearing same Birth Registration Number (BRN).",
+                "For individual born on or after 01.10.2023, birth certificate is mandatory for enrolment and update."
+            ],
+            "verification_status": "pending_manual_review",
+            "active": true,
+            "tags": [
+                "aadhaar",
+                "uidai",
+                "dob_update",
+                "date_of_birth",
+                "declared_dob",
+                "verified_dob",
+                "exception_handling"
+            ]
+        },
+        {
+            "id": "UIDAI-GENDER-001",
+            "title": "Gender Update / Correction",
+            "field_key": "gender",
+            "scenario": "gender_update_correction",
+            "when_applicable": "Applicable when gender is recorded incorrectly, when an operator error must be corrected, or when a special gender-update case requires supporting evidence and UIDAI review.",
+            "procedure": [
+                "Visit an Aadhaar Enrolment or Update Centre and fill the applicable update form.",
+                "Select the required gender value and complete the prescribed verification.",
+                "For an operator-error case, re-enrol or submit the update through the applicable centre process and contact UIDAI through the official support route.",
+                "The concerned UIDAI Regional Office may verify the case and recommend reprocessing where permitted.",
+                "For a medical gender-change case, submit the officially required medical certificate where applicable.",
+                "For transition to transgender, submit the officially accepted Transgender Identity Card or Certificate where applicable."
+            ],
+            "required_document_categories": [
+                "No document for the standard first update where the official rule permits it",
+                "Medical certificate with photograph for applicable medical gender-change cases",
+                "Transgender Identity Card or Certificate for applicable transgender update cases"
+            ],
+            "example_documents": [],
+            "online_allowed": false,
+            "offline_required": true,
+            "update_limit": "Gender can be updated once under the standard lifetime limit. Further requests may require UIDAI exception handling.",
+            "human_review_required": true,
+            "warnings": [
+                "Nirdosh Vault cannot approve a gender-change request or authenticate supporting certificates.",
+                "Special and limit-exceeded cases remain subject to UIDAI review."
+            ],
+            "issuing_authority": "Unique Identification Authority of India (UIDAI)",
+            "official_portal": "https://uidai.gov.in",
+            "sources": [
+                {
+                    "title": "Aadhaar (Enrolment and Update) First Amendment Regulations, 2026",
+                    "file_name": "images_Aadhaar_Enrolment_and_Update_First_Amendment_Regulations_2026_pdf.pdf",
+                    "url": "",
+                    "effective_date": "2026-05-10"
+                },
+                {
+                    "title": "SOP dated 28-10-2021: Name and Gender Update Request under Exception Handling Process",
+                    "file_name": "images_SOP_dated_28_10_2021-Name_and_Gender_update_request_under_exception_handling_process_Circular_dated_03-11-2021.pdf",
+                    "url": "https://uidai.gov.in/images/SOP_dated_28_10_2021Name_and_Gender_update_request_under_exception_handling_process_Circular_dated_03-11-2021.pdf",
+                    "effective_date": "2021-11-03"
+                }
+            ],
+            "supporting_excerpt": [
+                "gender once",
+                "Gender update is permitted without any documentary support. Considering the restrictions on number of Gender update, the resident have to submit a medical certificate having photograph issued by surgeon or concerned Authority as POI document."
+            ],
+            "verification_status": "pending_manual_review",
+            "active": true,
+            "tags": [
+                "aadhaar",
+                "uidai",
+                "gender_update",
+                "demographic_update",
+                "operator_error",
+                "exception_handling"
+            ]
+        },
+        {
+            "id": "UIDAI-ADDRESS-001",
+            "title": "Address Update / Correction",
+            "field_key": "address",
+            "scenario": "address_update_correction",
+            "when_applicable": "Applicable when an Aadhaar holder changes residence or needs to correct address details, spelling, locality, post office or PIN code.",
+            "procedure": [
+                "For a document-based update, use the applicable Aadhaar form and provide a valid Proof of Address.",
+                "Complete the update through the officially supported online service or at an Aadhaar Enrolment or Update Centre.",
+                "For a Head-of-Family-based update, provide the Head of Family's Aadhaar details and the required Proof of Relationship.",
+                "The Head of Family must provide the prescribed consent or authentication.",
+                "Where officially permitted, an immediate-family-member self-declaration may be used for borrowing the family member's address.",
+                "Verify the final address, including PIN code and post office, before submitting the request."
+            ],
+            "required_document_categories": [
+                "UIDAI-accepted Proof of Address",
+                "Proof of Relationship for Head-of-Family-based update",
+                "Immediate-family-member self-declaration where officially permitted",
+                "UIDAI standard-format certificate where officially accepted"
+            ],
+            "example_documents": [
+                "Valid Indian Passport",
+                "Voter ID",
+                "Ration Card",
+                "Recent electricity, water or gas bill",
+                "Bank or Post Office passbook",
+                "Registered sale, gift or rent agreement",
+                "Property tax receipt within the permitted validity period"
+            ],
+            "online_allowed": true,
+            "offline_required": false,
+            "update_limit": "No lifetime limit is specified in the uploaded official sources.",
+            "human_review_required": false,
+            "warnings": [
+                "The exact accepted Proof of Address and validity period must be checked against the current UIDAI accepted-document list.",
+                "Head-of-Family and relationship-based routes have separate consent and document requirements.",
+                "Nirdosh Vault does not certify the legal validity of an address document."
+            ],
+            "issuing_authority": "Unique Identification Authority of India (UIDAI)",
+            "official_portal": "https://myaadhaar.uidai.gov.in/",
+            "sources": [
+                {
+                    "title": "Aadhaar (Enrolment and Update) First Amendment Regulations, 2026",
+                    "file_name": "images_Aadhaar_Enrolment_and_Update_First_Amendment_Regulations_2026_pdf.pdf",
+                    "url": "",
+                    "effective_date": "2026-05-10"
+                },
+                {
+                    "title": "Certificate for Aadhaar Enrolment or Update Circular",
+                    "file_name": "images_Circular__dated_27_11_2019.pdf",
+                    "url": "",
+                    "effective_date": "2019-11-27"
+                }
+            ],
+            "supporting_excerpt": [
+                "PIN code and Post Office are mandatory.",
+                "The address mentioned in the Aadhaar of HoF will be used for the address in the Aadhaar of the child.",
+                "Self-declaration from an immediate family member certifying the relationship with the individual residing at the same address."
+            ],
+            "verification_status": "pending_manual_review",
+            "active": true,
+            "tags": [
+                "aadhaar",
+                "uidai",
+                "address_update",
+                "proof_of_address",
+                "head_of_family",
+                "relationship_based_update"
+            ]
+        }
+    ]
+}

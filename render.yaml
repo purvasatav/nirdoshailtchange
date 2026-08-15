@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: nirdosh-vault-api
+    runtime: docker
+    dockerfilePath: ./api/Dockerfile
+    dockerContext: ./api
+    healthCheckPath: /health
+    plan: free
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      - key: PADDLE_WARMUP_ON_START
+        value: "false"
+
+      - key: PREPROCESS_MAX_EDGE
+        value: "1500"
+
+      - key: PREPROCESS_JPEG_QUALITY
+        value: "78"
+
+      - key: PDF_MAX_PAGES
+        value: "3"
+
+      - key: GEMINI_TIMEOUT_MS
+        value: "45000"

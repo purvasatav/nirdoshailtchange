@@ -1,0 +1,100 @@
+{
+  "version": "1.0.0",
+  "documentTypes": [
+    {
+      "docType": "aadhaar",
+      "displayName": "Aadhaar Card",
+      "fields": [
+        { "key": "full_name", "label": "Full Name", "sensitivity": "pii" },
+        { "key": "dob", "label": "Date of Birth", "sensitivity": "pii" },
+        { "key": "gender", "label": "Gender", "sensitivity": "pii" },
+        { "key": "address", "label": "Address", "sensitivity": "pii" },
+        { "key": "aadhaar_no", "label": "Aadhaar Number", "sensitivity": "critical" },
+        { "key": "phone", "label": "Phone", "sensitivity": "pii" }
+      ],
+      "comparisonFields": ["full_name", "dob", "gender", "address"]
+    },
+    {
+      "docType": "pan",
+      "displayName": "PAN Card",
+      "fields": [
+        { "key": "full_name", "label": "Full Name", "sensitivity": "pii" },
+        { "key": "father_name", "label": "Father Name", "sensitivity": "pii" },
+        { "key": "dob", "label": "Date of Birth", "sensitivity": "pii" },
+        { "key": "pan_no", "label": "PAN Number", "sensitivity": "critical" }
+      ],
+      "comparisonFields": ["full_name", "father_name", "dob"]
+    },
+    {
+      "docType": "birth_certificate",
+      "displayName": "Birth Certificate",
+      "fields": [
+        { "key": "full_name", "label": "Full Name", "sensitivity": "pii" },
+        { "key": "dob", "label": "Date of Birth", "sensitivity": "pii" },
+        { "key": "place_of_birth", "label": "Place of Birth", "sensitivity": "pii" },
+        { "key": "father_name", "label": "Father Name", "sensitivity": "pii" },
+        { "key": "mother_name", "label": "Mother Name", "sensitivity": "pii" },
+        { "key": "reg_no", "label": "Registration Number", "sensitivity": "critical" }
+      ],
+      "comparisonFields": ["full_name", "dob", "place_of_birth", "father_name", "mother_name"]
+    },
+    {
+      "docType": "domicile_certificate",
+      "displayName": "Domicile Certificate",
+      "fields": [
+        { "key": "full_name", "label": "Full Name", "sensitivity": "pii" },
+        { "key": "father_name", "label": "Father Name", "sensitivity": "pii" },
+        { "key": "address", "label": "Address", "sensitivity": "pii" },
+        { "key": "domicile_state", "label": "State", "sensitivity": "public" },
+        { "key": "domicile_district", "label": "District", "sensitivity": "public" },
+        { "key": "reg_no", "label": "Certificate Number", "sensitivity": "critical" },
+        { "key": "issuing_authority", "label": "Issuing Authority", "sensitivity": "public" },
+        { "key": "issue_date", "label": "Issue Date", "sensitivity": "public" }
+      ],
+      "comparisonFields": ["full_name", "father_name", "address", "domicile_state", "domicile_district"]
+    },
+    {
+      "docType": "caste_certificate",
+      "displayName": "Caste Certificate",
+      "fields": [
+        { "key": "full_name", "label": "Full Name", "sensitivity": "pii" },
+        { "key": "father_name", "label": "Father Name", "sensitivity": "pii" },
+        { "key": "address", "label": "Address", "sensitivity": "pii" },
+        { "key": "caste_category", "label": "Caste Category", "sensitivity": "critical" },
+        { "key": "reg_no", "label": "Certificate Number", "sensitivity": "critical" },
+        { "key": "issuing_authority", "label": "Issuing Authority", "sensitivity": "public" },
+        { "key": "issue_date", "label": "Issue Date", "sensitivity": "public" }
+      ],
+      "comparisonFields": ["full_name", "father_name", "address", "caste_category"]
+    },
+    {
+      "docType": "income_certificate",
+      "displayName": "Income Certificate",
+      "fields": [
+        { "key": "full_name", "label": "Full Name", "sensitivity": "pii" },
+        { "key": "father_name", "label": "Father Name", "sensitivity": "pii" },
+        { "key": "address", "label": "Address", "sensitivity": "pii" },
+        { "key": "annual_income", "label": "Annual Income", "sensitivity": "critical" },
+        { "key": "income_year", "label": "Income Year", "sensitivity": "public" },
+        { "key": "reg_no", "label": "Certificate Number", "sensitivity": "critical" },
+        { "key": "issuing_authority", "label": "Issuing Authority", "sensitivity": "public" }
+      ],
+      "comparisonFields": ["full_name", "father_name", "address"]
+    },
+    {
+      "docType": "educational_certificate",
+      "displayName": "Educational Certificate",
+      "fields": [
+        { "key": "full_name", "label": "Full Name", "sensitivity": "pii" },
+        { "key": "father_name", "label": "Father Name", "sensitivity": "pii" },
+        { "key": "mother_name", "label": "Mother Name", "sensitivity": "pii" },
+        { "key": "dob", "label": "Date of Birth", "sensitivity": "pii" },
+        { "key": "institution", "label": "Institution", "sensitivity": "public" },
+        { "key": "roll_no", "label": "Roll Number", "sensitivity": "public" },
+        { "key": "examination_year", "label": "Examination Year", "sensitivity": "public" },
+        { "key": "reg_no", "label": "Registration Number", "sensitivity": "critical" }
+      ],
+      "comparisonFields": ["full_name", "father_name", "mother_name", "dob", "institution"]
+    }
+  ]
+}
